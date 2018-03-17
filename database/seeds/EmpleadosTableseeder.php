@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Empleado;
 
-class DatabaseSeeder extends Seeder
+class EmpleadosTableseeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,8 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
-
-        $this -> call (TurnoTableseeder::class);
+        //
+        factory (Empleado::class,10)->create();
     }
 }
